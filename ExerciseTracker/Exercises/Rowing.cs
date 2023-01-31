@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace ExerciseTracker.Exercises
 {
-    public class Rowing
+    public class Rowing : IExercise
     {
-        public string Report() 
+        public int Distance { get; set; }
+        public int Time { get; set; }
+
+        public string Report()
         {
-            return "Rowing:";
+            return $"Rowing: {Distance} distance, {Time} time";
         }
     }
 }
