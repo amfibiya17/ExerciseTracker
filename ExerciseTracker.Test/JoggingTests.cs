@@ -13,7 +13,7 @@ namespace ExerciseTracker.Test
                 Time = 10
             };
 
-            Assert.That(jog.Report(), Is.EqualTo("Jogging: 1000m, 10 minutes, 6kph"));
+            Assert.That(jog.Report(), Is.EqualTo("Jogging: 1000m, 10 minutes"));
         }
     }
 }

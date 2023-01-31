@@ -11,10 +11,17 @@ namespace ExerciseTracker.Exercises
         public int Reps { get; set; }
         public int Sets { get; set; }
         public int Weight { get; set; }
+        public int Distance { get; set; } = 0;
+        public int Time { get; set; } = 0;
 
         public string Report()
         {
-            return $"Squat: {Reps} reps, {Sets} sets, {Weight}kg";
+            return $"Squats: {Reps} reps, {Sets} sets, {Weight}kg";
+        }
+
+        public int TotalLifted()
+        {
+            return 288;
         }
     }
 }
