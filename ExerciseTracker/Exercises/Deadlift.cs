@@ -6,15 +6,9 @@ using System.Threading.Tasks;
 
 namespace ExerciseTracker.Exercises
 {
-    public class Deadlift: IExercise
+    public class Deadlift: IWeightsExercise
     {
-        public int Weight { get; set; }
-        public int Sets { get; set; }
-        public int Reps { get; set; }
-        public int Distance { get; set; } = 0;
-        public int Time { get; set; } = 0;
-
-        public string Report()
+        public override string Report()
         {
             return $"Deadlift: {Reps} reps, {Sets} sets, {Weight}kg";
         }

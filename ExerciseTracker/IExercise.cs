@@ -4,8 +4,8 @@ namespace ExerciseTracker
 {
     public interface IExercise
     {
-        
         string Report();
+
         int Weight { get; set; }
         int Sets { get; set; }
         int Reps { get; set; }
