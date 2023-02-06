@@ -14,7 +14,7 @@ namespace ExerciseTracker
                 new Rowing { Distance = 1000, Time = 6 }
             };
 
-            //this is also giving an error, what's wrong here?
+            //This is also giving an error, what's wrong here?
             // I'd also like to know the total weight lifted, and the total distance travelled - how can we manage those?
             int totalWeightLifted = 0;
             int totalDistanceTravelled = 0;
@@ -22,9 +22,9 @@ namespace ExerciseTracker
             {
                 Console.WriteLine(exercise.Report());
 
-                if (exercise is IWeightsExercise weights)
+                if (exercise is IWeightsExercise weightsExercise)
                 {
-                    totalWeightLifted += weights.Weight;
+                    totalWeightLifted += weightsExercise.Weight;
                 }
                 
                 if (exercise is IDistanceExercise distanceExercise)
