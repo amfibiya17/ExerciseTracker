@@ -14,17 +14,14 @@ namespace ExerciseTracker
                 new Rowing { Distance = 1000, Time = 6 }
             };
 
-            foreach (var exercise in exercisesCompleted)
-            {
-                //this is also giving an error, what's wrong here?
-                Console.WriteLine(exercise.Report());
-            }
-
+            //this is also giving an error, what's wrong here?
             // I'd also like to know the total weight lifted, and the total distance travelled - how can we manage those?
             int totalWeightLifted = 0;
             int totalDistanceTravelled = 0;
             foreach (var exercise in exercisesCompleted)
             {
+                Console.WriteLine(exercise.Report());
+
                 if (exercise is IWeightsExercise weights)
                 {
                     totalWeightLifted += weights.Weight;
