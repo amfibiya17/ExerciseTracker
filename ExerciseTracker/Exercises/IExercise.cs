@@ -1,6 +1,4 @@
-﻿using ExerciseTracker.Exercises;
-
-namespace ExerciseTracker
+﻿namespace ExerciseTracker.Exercises
 {
     public interface IExercise
     {
